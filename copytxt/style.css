@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #ded2bc;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+}
+
+main.cards {
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 508px;
+    margin-left: 32px;
+}
+
+main.cards section.card :first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .qr {
+    width: 200px;
+    height: 200px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card {
+    box-shadow: 20px 20px 50px -30px #e2c692;
+}
+
+
+@media screen  and (max-width: 720px){
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+    }
+}
+
+.copy-text {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+}
+
+.copy-text input.text {
+    padding: 10px;
+    color: #555;
+    border: none;
+    outline: none;
+    font-size: 90%;
+}
+
+.copy-text button {
+    padding: 10px;
+    background: #d4904b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copy-text button:active {
+    background: #ded2bc
+}
