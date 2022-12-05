@@ -8,10 +8,12 @@ copyTxt.querySelector("button").addEventListener("click", function() {
 });
 
 function show() {
-    document.querySelector("i").className += "fa fa-check";
-    document.querySelector("button").style.background = ("#649949");
-    setTimeout(() => {
-      copyTxt.classList.remove("active");
-      document.querySelector("button").style.background = ("#de4904b");
-    }, 1000);
+  document.querySelector("button").style.transition = ("all 1s");
+  document.querySelector("i").className += "fa fa-check";
+  document.querySelector("button").style.background = ("#649949");
+  setTimeout(() => {
+    document.querySelector("button").style.transition = ("all 1s");
+    document.querySelector("i").className += "fa fa-clone";
+    document.querySelector("button").style.background = ("#d4904b");
+  }, "1800");
 }
